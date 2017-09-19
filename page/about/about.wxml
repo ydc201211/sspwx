@@ -1,0 +1,12 @@
+<!--page/about/about.wxml-->
+<view class="container">
+  <view class="page-head">
+    <view class="page-head-title">关于“剥不开皮的核桃”小程序</view>
+    <view class="page-head-line"></view>
+  </view>
+
+  <view class="page-body">
+    <view class="section">小程序开发作者：剥不开皮的核桃</view>
+     <view class="section">微信号：yuan23314</view>
+  </view>
+</view>
