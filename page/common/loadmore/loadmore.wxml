@@ -1,0 +1,7 @@
+<!--page/common/loadmore/loadmore.wxml-->
+<template name="loadmore">
+<view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</template>

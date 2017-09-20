@@ -1,13 +1,16 @@
 {
   "pages": [
     "page/index/index",
-    "page/about/about"
+    "page/about/about",
+    "page/articleItem/articleItem",
+    "page/common/loadmore/loadmore"
   ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "剥不开皮的核桃",
     "navigationBarBackgroundColor": "#1296db",
-    "backgroundColor": "#F8F8F8"
+    "backgroundColor": "#F8F8F8",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#7A7E83",

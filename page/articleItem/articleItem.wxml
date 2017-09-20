@@ -1,0 +1,17 @@
+<!--page/articleItem/articleItem.wxml-->
+<template name="articleItem">
+  <view class="item-container">
+    <view class="item-left">
+        <image class="item-img" src="{{imageUrl}}" width="100" height="75"></image>
+    </view>
+    <view class="item-right">
+        <view class="item-title">{{title}}</view>
+        <view class="item-box" >
+          <image class="icon-time" src="../../image/icon_time.png"></image>
+          <view class="item-time">{{time}}</view>
+        </view>
+        
+    </view> 
+  </view>
+  <view class="dash-line"></view>
+</template>

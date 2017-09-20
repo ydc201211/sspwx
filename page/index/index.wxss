@@ -1,7 +1,12 @@
 /* page/index/index.wxss */
 @import "../common/lib/weui.wxss";
+@import "../articleItem/articleItem.wxss";
+@import "../common/loadmore/loadmore.wxss";
 
 .slide-image{
   width: 100%;
   height: 100%;
+}
+.body{
+  margin-top: 20rpx;
 }

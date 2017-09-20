@@ -1,9 +1,12 @@
 <import src="../common/head.wxml" />
 <import src="../common/foot.wxml" />
+<import src="../articleItem/articleItem.wxml" />
+<import src="../common/loadmore/loadmore.wxml" />
 
 <view class="container">
   <!-- <template is="head" data="{{title: '剥不开皮的核桃'}}"/> -->
   <view class="head">
+     
      <swiper indicator-dots="{{indicatorDots}}"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
         <block wx:for="{{imgUrls}}" wx:key="*this">
@@ -12,5 +15,14 @@
           </swiper-item>
         </block>
       </swiper>
+      
   </view>
+
+  <view class="body">
+    <block wx:for="{{listData}}" wx:key="*this">
+      <template is="articleItem" data="{{...item}}"/>
+    </block> 
+  </view>
+
+  <template is="loadmore" data="{{isHideLoadMore}}"/>
 </view>
