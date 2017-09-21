@@ -1,0 +1,71 @@
+/* page/common/sliderNav/sliderNav.wxss */
+.slider-nav{
+  width: inherit;
+  height: 100%;
+  background: #fff;
+}
+.slider-nav-head{
+  background: #1296db;
+  width: 100%;
+  height: 180rpx;
+}
+
+.logo{
+  margin: 6rpx;
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 66rpx;
+}
+.logo-box{  
+  text-align: center;
+}
+.text-mess{
+  text-align: center;
+}
+.nav-head-title{
+  font-size:26rpx;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  color: #fff;
+}
+.nav-head-brief{
+  line-height: 20px;
+  font-size:24rpx;
+  color: #fff;
+}
+
+.slider-nav-search{
+  height: 90rpx;
+  border-bottom: 1px dashed #cdcdcd;
+  vertical-align: middle;
+  padding: 16rpx 10rpx;
+  box-sizing: border-box;
+}
+
+.search-input{
+  float: left;
+  height: 60rpx;
+  width: 230rpx;
+  background: #eee;
+  margin: 0 12rpx;
+  padding: 0 10rpx;
+  font-size: 26rpx;
+  
+}
+.search-btn{
+  width: 120rpx;
+  height: 60rpx;
+  margin: 0;
+  font-size: 24rpx;
+  border: 1px solid #1296db;
+  background: none;
+  color: #1296db;
+}
+.level-one-text{
+  color: #1296db;
+  font-size: 30rpx;
+}
+.level-two-text{
+  color: #cdcdcd;
+  font-size: 26rpx;
+}

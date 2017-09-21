@@ -39,6 +39,9 @@ Page({
    
 
     ],
+
+    levelList:[],
+    levelOneIndex:0,
     isHideLoadMore: false,
     indicatorDots: true,
     vertical: false,
@@ -46,14 +49,56 @@ Page({
     interval: 2000,
     duration: 1000,
     scrollTop: 100,
-    
+    ishideMask:true,
+    ishideSlider:true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      levelList:[
+        {
+          levelName:"IT",
+          levelId:"1",
+          isShow:false,
+          subList:[
+            {
+              parentLevelId:"1",
+              levelName: "IT1",
+              levelId: "1001",
+              pageCount:11
+            },
+            {
+              parentLevelId: "1",
+              levelName: "IT1",
+              levelId: "1",
+              pageCount: 11
+            }
+          ]
+        },
+        {
+          levelName: "娱乐",
+          levelId: "2",
+          isShow: false,
+          subList: [
+            {
+              parentLevelId: "1",
+              levelName: "IT2",
+              levelId: "1001",
+              pageCount: 11
+            },
+            {
+              parentLevelId: "1",
+              levelName: "IT3",
+              levelId: "1",
+              pageCount: 11
+            }
+          ]
+        }
+      ]
+    })
   },
 
   /**
@@ -154,5 +199,36 @@ Page({
     this.setData({
       duration: e.detail.value
     })
+  },
+
+  hideSlider:function(e){
+    this.setData({
+      ishideMask:true,
+      ishideSlider: true
+    })
+  },
+  showSlider:function(e){
+    console.log("被点击了")
+    this.setData({
+      ishideMask: false,
+      ishideSlider:false
+    })
+  },
+  showLevelTwo:function(e){
+    var index = e.currentTarget.dataset.id;
+    
+    var isShow = "levelList[" + index + "].isShow";  
+    if(this.data.levelList[index].isShow === true){
+      this.setData({
+        [isShow]:false
+      })
+    
+    }else{
+      this.setData({
+        [isShow]:true
+      })
+      
+    }
+    console.log(this.data.levelList[index].isShow);
   }
 })

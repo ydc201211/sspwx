@@ -3,7 +3,8 @@
     "page/index/index",
     "page/about/about",
     "page/articleItem/articleItem",
-    "page/common/loadmore/loadmore"
+    "page/common/loadmore/loadmore",
+    "page/common/sliderNav/sliderNav"
   ],
   "window": {
     "navigationBarTextStyle": "white",

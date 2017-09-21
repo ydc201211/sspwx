@@ -2,6 +2,7 @@
 <import src="../common/foot.wxml" />
 <import src="../articleItem/articleItem.wxml" />
 <import src="../common/loadmore/loadmore.wxml" />
+<import src="../common/sliderNav/sliderNav.wxml" />
 
 <view class="container">
   <!-- <template is="head" data="{{title: '剥不开皮的核桃'}}"/> -->
@@ -25,4 +26,14 @@
   </view>
 
   <template is="loadmore" data="{{isHideLoadMore}}"/>
+    
+  <button class="nav-btn" bindtap="showSlider">
+    导航
+  </button>
+  <view class="slider-box {{ishideSlider ? 'slider-hide' : 'slider-show'}}" >
+     <template is="slider-nav" data="{{levelList}}"></template> 
+  </view>
+  <view class="mask {{ishideMask ? 'hide' : 'show'}}"  bindtap="hideSlider">
+  
+  </view>
 </view>
