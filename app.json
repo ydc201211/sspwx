@@ -4,7 +4,9 @@
     "page/about/about",
     "page/articleItem/articleItem",
     "page/common/loadmore/loadmore",
-    "page/common/sliderNav/sliderNav"
+    "page/common/navContentType/navContentType",
+    "page/common/navTime/navTime",
+    "page/listDetail/listDetail"
   ],
   "window": {
     "navigationBarTextStyle": "white",

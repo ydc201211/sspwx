@@ -2,7 +2,7 @@
 <import src="../common/foot.wxml" />
 <import src="../articleItem/articleItem.wxml" />
 <import src="../common/loadmore/loadmore.wxml" />
-<import src="../common/sliderNav/sliderNav.wxml" />
+<import src="../common/navContentType/navContentType.wxml" />
 
 <view class="container">
   <!-- <template is="head" data="{{title: '剥不开皮的核桃'}}"/> -->
@@ -31,8 +31,35 @@
     导航
   </button>
   <view class="slider-box {{ishideSlider ? 'slider-hide' : 'slider-show'}}" >
-     <template is="slider-nav" data="{{levelList}}"></template> 
+    <view class="slider-nav">
+      <view class="slider-nav-head">
+        <view class="logo-box">
+          <image class="logo" src="/image/icon_logo.png"></image>
+        </view>
+        <view class="text-mess">
+          <view class="nav-head-title">剥不开皮的核桃</view>
+          <view class="nav-head-brief">作一个优质信息共享平台</view>
+        </view>
+      </view>
+    
+      <view class="slider-nav-search">
+        <input class="search-input" type="text" placeholder="请输入关键字。。。"/>
+        <button class="search-btn">搜索</button>
+      </view>
+      <view class="nav-list-box">
+        <image class="icon_nav" src="/image/icon_nav_type.png"></image>
+        <view class="nav-title">主题分类</view>
+      </view>
+      <template is="navContentType" data="{{levelList}}"></template>
+      <view class="nav-list-box">
+        <image class="icon_nav"
+        src="/image/icon_nav_time.png"></image>
+         <view class="nav-title">文章归档</view>
+      </view>
+     
+    </view>
   </view>
+
   <view class="mask {{ishideMask ? 'hide' : 'show'}}"  bindtap="hideSlider">
   
   </view>

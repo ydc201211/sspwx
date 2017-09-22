@@ -1,0 +1,26 @@
+<!--page/common/navContentType/navContentType.wxml-->
+<template name="navContentType">
+  <view class="slider-nav-list">
+    <block wx:for="{{levelList}}" wx:key="*this">
+      <view class="nav-item-box">
+        <view class="item-level-one-box" data-id="{{index}}" bindtap="showLevelTwo">
+          <image class="leve-one-icon"src="/image/icon_right_arrow_blue.png"></image>
+          <view class="level-one-text">{{item.levelName}}</view>
+        </view>
+        <!-- 有二级标题则渲染 -->
+        <block wx:if="{{item.subList}}">
+          <view class="item-level-two-list {{item.isShow === true? 'show' : 'hide'}}">
+            <block wx:for="{{item.subList}}" wx:key="*this">
+              <navigator url="/page/listDetail/listDetail?key={{item.levelName}}">
+                <view class="item-level-two-box">
+                  <image class="leve-two-icon"src="/image/icon_right_arrow_gray.png"></image>
+                  <view class="level-two-text">{{item.levelName}}</view>
+                </view>
+                </navigator>
+            </block>
+          </view>
+        </block>
+      </view>
+    </block> 
+  </view>
+</template>
