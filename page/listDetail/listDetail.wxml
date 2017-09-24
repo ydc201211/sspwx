@@ -1,2 +1,15 @@
 <!--page/listDetail/listDetail.wxml-->
-<text>page/listDetail/listDetail.wxml</text>
+<import src="../articleItem/articleItem.wxml" />
+<import src="../common/loadmore/loadmore.wxml" />
+<view class="container">
+  <view class="head">
+    <view class="title">分类：{{levelName}} </view>
+  </view>
+  <view class="pageList">
+    <block wx:for="{{listData}}" wx:key="*this">
+      <template is="articleItem" data="{{...item}}"/>
+    </block>
+  </view>
+
+  <template is="loadmore" data="{{isHideLoadMore}}"/>
+</view>

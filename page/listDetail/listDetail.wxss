@@ -1,1 +1,11 @@
 /* page/listDetail/listDetail.wxss */
+@import "../articleItem/articleItem.wxss";
+@import "../common/loadmore/loadmore.wxss";
+
+.title{
+  color: #1296db;
+  border-bottom: 1px solid #eee;
+  margin: 20rpx;
+  font-size: 32rpx;
+  padding: 10rpx;
+}

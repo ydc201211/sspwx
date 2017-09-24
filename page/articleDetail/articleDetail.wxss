@@ -1,0 +1,61 @@
+/* page/articleDetail/articleDetail.wxss */
+@import "../../WxEmojiView/WxEmojiView.wxss";
+
+.head{
+  padding: 20rpx;
+}
+.title{
+  font-size: 30rpx;
+  font-family: '微软雅黑';
+  color: #1296db;
+  letter-spacing: 2rpx;
+}
+
+.item-box-time{
+  height: 60rpx;
+  padding: 10rpx 0;
+  box-sizing: border-box
+}
+.item-box-author{
+  height: 60rpx;
+  padding: 16rpx 0;
+  box-sizing: border-box;
+}
+.icon-box{
+  float: left;
+  width: 28rpx;
+  height: 28rpx;
+}
+.item-time{
+  font-size: 24rpx;
+  color: #999;
+  float: left; 
+  line-height: 30rpx;
+  margin-left: 16rpx;
+}
+.item-author{
+  font-size: 24rpx;
+  color: #515151;
+  float: left; 
+  line-height: 30rpx;
+  margin-left: 16rpx;
+}
+.pageBody{
+  padding: 20rpx;
+  width: 100%;
+  height: auto;
+}
+.parting-line{
+  height: 1px;
+  margin: 0rpx 3%;
+  border-bottom:1px solid #eee;
+}
+.emoji-btn{
+  width: 60rpx;
+  height: 60rpx;
+}
+.post-btn{
+  width: 100rpx;
+  height: 60rpx;
+  
+}

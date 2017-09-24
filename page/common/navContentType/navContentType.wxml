@@ -11,7 +11,7 @@
         <block wx:if="{{item.subList}}">
           <view class="item-level-two-list {{item.isShow === true? 'show' : 'hide'}}">
             <block wx:for="{{item.subList}}" wx:key="*this">
-              <navigator url="/page/listDetail/listDetail?key={{item.levelName}}">
+              <navigator url="/page/listDetail/listDetail?levelName={{item.levelName}}&levelId={{item.levelId}}">
                 <view class="item-level-two-box">
                   <image class="leve-two-icon"src="/image/icon_right_arrow_gray.png"></image>
                   <view class="level-two-text">{{item.levelName}}</view>

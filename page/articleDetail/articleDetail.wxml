@@ -1,0 +1,28 @@
+<!--page/articleDetail/articleDetail.wxml-->
+<import src="../../WxEmojiView/WxEmojiView.wxml"/>
+
+<view class="article-detail-content">
+    <view class="head">
+      <view class="title">{{title}}</view>
+        
+          <view class="item-box-author" >
+            <image class="icon-box"src="../../image/icon_author.png"></image>
+                <view class="item-author">{{authorName}}</view>
+          </view>
+          <view class="item-box-time" >
+            <image class="icon-box"src="../../image/icon_time.png"></image>
+                <view class="item-time">{{time}}</view>
+          </view>
+
+    </view>
+    <view class="pageBody">{{pageHtml}} </view>
+    <view class="parting-line"></view>
+    <view>asdasd</view>
+    <view class="post-comments-box">
+        <template is="WxEmojiTextarea" data="{{WxEmojiObjs}}" />
+        <view class="set-box">
+          <image class="emoji-btn" src="../../image/icon_emoji_btn.png" bindtap="showEmojiBox"></image>
+          <button class="post-btn" bindtap=''></button>
+        </view>
+    </view>
+</view>

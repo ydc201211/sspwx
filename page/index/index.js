@@ -12,32 +12,36 @@ Page({
     
     listData:[
     {
-        imageUrl:'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+
+    articleId:"0001",        imageUrl:'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
         title:'科技改变生活科技改变生活科技改变生活科技改变生活科技改变生活科技改变生活科技改变生活科技改变生活科技改变生活科技改变生活科技改变生活',
         time:'2017-2-12',
     },
     {
+      articleId: "0002",
       imageUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       title: '科技改变生活',
       time: '2017-2-12',
     },
     {
+      articleId: "0003",
       imageUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       title: '科技改变生活',
       time: '2017-2-12',
     },
     {
+      articleId: "0004",
       imageUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       title: '科技改变生活',
       time: '2017-2-12',
     },
     {
+      articleId: "0005",
       imageUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
       title: '科技改变生活',
       time: '2017-2-12',
     },
    
-
     ],
 
     levelList:[],
@@ -156,7 +160,7 @@ Page({
     
       for(var i =0;i<3;i++){
         this.data.listData.push({
-          
+          articleId: "000"+(i+5)+"",
           imageUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
           title: '科技改变生活'+i,
           time: '2017-2-12',
@@ -208,7 +212,6 @@ Page({
     })
   },
   showSlider:function(e){
-    console.log("被点击了")
     this.setData({
       ishideMask: false,
       ishideSlider:false

@@ -6,7 +6,8 @@
     "page/common/loadmore/loadmore",
     "page/common/navContentType/navContentType",
     "page/common/navTime/navTime",
-    "page/listDetail/listDetail"
+    "page/listDetail/listDetail",
+    "page/articleDetail/articleDetail"
   ],
   "window": {
     "navigationBarTextStyle": "white",
