@@ -17,12 +17,11 @@
     </view>
     <view class="pageBody">{{pageHtml}} </view>
     <view class="parting-line"></view>
-    <view>asdasd</view>
+    
     <view class="post-comments-box">
-        <template is="WxEmojiTextarea" data="{{WxEmojiObjs}}" />
+        <textarea class="comments-input" placeholder="placeholder颜色是红色的" placeholder-style="color:#eee;"  />
         <view class="set-box">
-          <image class="emoji-btn" src="../../image/icon_emoji_btn.png" bindtap="showEmojiBox"></image>
-          <button class="post-btn" bindtap=''></button>
+          <button type="primary" class="post-btn" bindtap=''>发送</button>
         </view>
     </view>
 </view>

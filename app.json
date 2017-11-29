@@ -7,7 +7,8 @@
     "page/common/navContentType/navContentType",
     "page/common/navTime/navTime",
     "page/listDetail/listDetail",
-    "page/articleDetail/articleDetail"
+    "page/articleDetail/articleDetail",
+    "page/comment/comment"
   ],
   "window": {
     "navigationBarTextStyle": "white",

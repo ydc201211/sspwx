@@ -55,7 +55,16 @@
   height: 60rpx;
 }
 .post-btn{
-  width: 100rpx;
+  width: 130rpx;
   height: 60rpx;
-  
+  line-height: 31px;
+  float: right;
+  right: 20px;
+}
+.comments-input{
+  width: 90%;
+  margin: 10px auto;
+  height: 80px;
+  border: 1px solid #eee;
+  border-radius: 5px;
 }
