@@ -1,5 +1,6 @@
 <!--page/articleDetail/articleDetail.wxml-->
 <import src="../../WxEmojiView/WxEmojiView.wxml"/>
+<import src="../../wxParse/wxParse.wxml"/>
 
 <view class="article-detail-content">
     <view class="head">
@@ -7,15 +8,16 @@
         
           <view class="item-box-author" >
             <image class="icon-box"src="../../image/icon_author.png"></image>
-                <view class="item-author">{{authorName}}</view>
+            <view class="item-author">{{authorName}}</view>
           </view>
           <view class="item-box-time" >
-            <image class="icon-box"src="../../image/icon_time.png"></image>
+                <image class="icon-box"src="../../image/icon_time.png"></image>
                 <view class="item-time">{{time}}</view>
           </view>
-
     </view>
-    <view class="pageBody">{{pageHtml}} </view>
+    <view class="pageBody">
+        <template is="wxParse" data="{{wxParseData:pageHtml.nodes}}"/>
+    </view>
     <view class="parting-line"></view>
     
     <view class="post-comments-box">

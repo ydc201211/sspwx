@@ -11,7 +11,7 @@ Page({
     title:"",
     time:"",
     articleId:"",
-    pageHtml:"asdasdsad",
+    pageHtml:"<div style='color:red;font-size:16rpx'>我是HTML代码</div><div>2828382838</div>",
     authorName:"剥不开皮的核桃",
     isShowWxEmojiChooseView:false
   },
@@ -38,6 +38,7 @@ Page({
     });
     var that = this;
     WxEmoji.bindThis(this);
+    WxParse.wxParse('pageHtml', 'html', this.data.pageHtml, that, 5);
   },
 
   /**
@@ -88,14 +89,12 @@ Page({
   onShareAppMessage: function () {
   
   },
-
   bindTextAreaBlur: function (e) {
     console.log(e.detail.value)
   },
   WxEmojiTextareaFocus: function (e) {
     var that = this;
     WxEmoji.WxEmojiTextareaFocus(that, e);
-
   },
   WxEmojiTextareaBlur: function (e) {
     var that = this;
@@ -129,6 +128,5 @@ Page({
         isShowWxEmojiChooseView:false
       });
     }
-    
   }
 })

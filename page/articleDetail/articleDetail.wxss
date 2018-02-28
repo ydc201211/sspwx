@@ -1,8 +1,9 @@
 /* page/articleDetail/articleDetail.wxss */
 @import "../../WxEmojiView/WxEmojiView.wxss";
+@import "../../wxParse/wxParse.wxss";
 
 .head{
-  padding: 20rpx;
+  padding: 20rpx 20rpx 10rpx 20rpx;
 }
 .title{
   font-size: 30rpx;
